@@ -1,0 +1,41 @@
+PRIMA PARTE
+
+Si vogliono gestire Immobili
+
+Ogni immobile ha :
+	- nome proprietario
+	- mq
+	- prezzo 
+Per ogni immobile una funzione per stampare i dettagli immobile
+
+Si gestiscono allo stato attuale :
+
+Villette : mqGiardino 
+Magazzini : numeroPorte fronte strada
+Appartamenti : mqBalcone 
+
+Classe astratta immobile 
+metodo stampa in override sulle classi derivate con attributi locali più mqTotali
+
+metodo astratto in classe immobile calcolaProvvigione
+
+- Villetta 15% del prezzo + (10%mqGiradino*800)
+- Magazzino 8%del prezzo + (numPorte+800)
+- Appartamento 10% del prezzo + (8%mqBalconi*500)
+
+------------------------------------------------------------------------------------------------
+SECONDA PARTE
+Utilizzare il DataModel di Immobili
+
+Realizzare una classe AgenziaImmobiliare
+
+Dati : la classe ha come variabili memebro
+
+NomeAgenzia
+CittaAgenzia
+Lista di Immobili che gestisce (vuol dire che ha un List<Immobile> limm....come variabile membro)
+
+Funzionalità :
+
+Stampare i dati dell'agenzia - Metodo interno
+Stampare i dati di tutti gli immobili gestiti dall'agenzia (con metodo polimorfico)
